@@ -23,8 +23,7 @@ object Application extends Controller {
       val end = lowercase.indexOfSlice("</title>")
       val title = body.slice(start,end)
       println(s"title is from $start to $end which is '$title'")
-      val explanation = if("" == title) s"Uh Oh! $url has no <title>" else s"The <title> of $url is '$title'"
-      Ok(explanation)
+      Ok(title)
     }
   }
 }
