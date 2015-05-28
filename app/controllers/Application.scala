@@ -11,7 +11,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 object Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index("What's the title??!"))
+    Ok(views.html.index("What's the title?!"))
   }
 
   def crawl(url: String) = Action.async { implicit request =>

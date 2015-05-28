@@ -9,7 +9,8 @@ $(function() {
   var output = $('#crawled-title');
   var spinner = $('.crawl-spinner');
   output.hide();
-
+  input.value = "flimflam.com";
+  
   function showOutput(alertType, html) {
     var opposite = alertType === 'danger' ? 'success' : 'danger';
     output.removeClass('alert-'+opposite).addClass('alert-'+alertType);
