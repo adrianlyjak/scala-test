@@ -1,0 +1,13 @@
+@(message: String)
+
+@main("What's the Title?!") {
+  
+  <h1>@message</h1>
+  <form id="crawl">
+    <input name="crawl-url" type="text" value="google.com">
+    <input name="submit-crawl" type="submit" value="Get Title">
+    <img class="crawl-spinner" src="@routes.Assets.at("images/spinner.gif")" />
+  </form>
+  <div id="crawled-title"></div>
+
+}
